@@ -1,0 +1,23 @@
+{
+	"name": "ds_dest",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ds_dest",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "out.csv",
+				"container": "destination"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
